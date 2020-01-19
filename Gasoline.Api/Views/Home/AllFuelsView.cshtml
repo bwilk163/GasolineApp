@@ -1,0 +1,14 @@
+﻿@model List<Gasoline.Data.Models.FuelType>
+@{
+    ViewData["Title"] = "AllFuelsView";
+}
+
+<h2>Wszystkie paliwa</h2>
+
+@foreach (var f in Model)
+{
+    <a asp-action="cheapestFuels" asp-route-id="@f.Id">@f.FuelName</a><br />
+}
+
+<hr />
+<a asp-action="Index">Widok startowy</a>

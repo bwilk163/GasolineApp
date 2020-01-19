@@ -1,0 +1,38 @@
+﻿@model List<Gasoline.Api.Models.Home.GasStationFuelViewModel>
+
+@{
+    ViewData["Title"] = "CheapestFuelByIdView";
+}
+
+<h2>CheapestFuelByIdView</h2>
+
+@if (Model != null)
+{
+    <h4>Najtańsza oferta</h4>
+    <div> Nazwa paliwa: @Model[0].FuelName </div>
+    <div> Cena paliwa: @Model[0].FuelPrice zł</div>
+    <div> Nazwa stacji: @Model[0].GasStationName</div>
+
+    <hr />
+    <div>Pozostałe oferty</div>
+
+    <ul>
+        @for (var i = 1; i < @Model.Count; i++)
+        {
+            <li>
+                <div> Nazwa paliwa: @Model[i].FuelName </div>
+                <div> Cena paliwa: @Model[i].FuelPrice zł</div>
+                <div> Nazwa stacji: @Model[i].GasStationName</div>
+            </li>
+        }
+
+    </ul>
+}
+else
+{
+    <div>Brak paliwa na stacjach</div>
+}
+
+
+<hr />
+<a asp-action="Index">Widok startowy</a>

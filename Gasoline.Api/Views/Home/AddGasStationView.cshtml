@@ -1,0 +1,18 @@
+﻿@model Gasoline.Api.Models.Home.AddGasStationViewModel
+@{
+    ViewData["Title"] = "AddGasStationView";
+}
+
+<h2>Dodaj nową stację paliw</h2>
+
+
+<form asp-action="AddGasStation" style="display: grid; grid-template-columns: auto auto; width: fit-content;">
+    Nazwa stacji <input type="text" asp-for="Name" /><br />
+    Miejscowość <input type="text" asp-for="City" /><br />
+    Kod pocztowy <input type="text" asp-for="PostalCode" /><br />
+    Ulica<input type="text" asp-for="Street" /><br />
+    <input type="submit" />
+</form>
+
+<hr />
+<a asp-action="Index">Widok startowy</a>

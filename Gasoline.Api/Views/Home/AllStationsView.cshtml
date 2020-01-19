@@ -1,0 +1,17 @@
+﻿@using Gasoline.Data.Models
+@model List<GasStation>
+
+@{
+    ViewData["Title"] = "AllStationsView";
+}
+
+<h2>Wszystkie stacje paliw</h2>
+
+@foreach (var station in Model)
+{
+    <div>
+        <div style="display: inline; margin-right: 15px">@station.Name, @station.City, @station.Street</div> <a asp-action="station" asp-route-id="@station.Id">Szczegóły</a>
+    </div>
+}
+<hr/>
+<a asp-action="Index">Widok startowy</a>

@@ -1,0 +1,63 @@
+﻿@model Gasoline.Api.Models.Home.GasStationDetailsViewModel
+
+@{
+    ViewData["Title"] = "GasStationDetails";
+}
+
+<h2>Szczegóły stacji</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        Nazwa: @Model.GasStation.Name <br>
+        Kod pocztowy: @Model.GasStation.PostalCode <br>
+        Miejscowość: @Model.GasStation.City <br>
+        Ulica: @Model.GasStation.Street <br>
+    </dl>
+
+    <form asp-action="DeleteGasStation" asp-route-id="@Model.GasStation.Id">
+        <input type ="submit" value="Usuń stację" />
+    </form>
+
+    <h4>
+    Dostępne paliwa
+    </h4>
+    
+    
+    @foreach(var f in Model.GasStationFuels)
+    {
+<div>
+    @f.FuelType.FuelName, @f.Price.ToString("F2") zł,
+    @f.LastUpdateUtc
+    <form asp-controller="Home" asp-action="UpdatePrice" method="post">
+        <input type="number" value="@f.Price" step="0.01" asp-for="NewPrice" />
+        <input type="hidden" name="FuelTypeId" value="@f.FuelTypeId" />
+        <input type="hidden" name="GasStationId" value="@f.GasStationId" />
+        <input type="submit" value="Aktualizuj" />
+    </form>
+    <form asp-controller="Home" asp-action="DeleteFuelTypeFromGasStation" method="post">
+        <input type="hidden" name="FuelTypeId" value="@f.FuelTypeId" />
+        <input type="hidden" name="GasStationId" value="@f.GasStationId" />
+        <input type="submit" value="Usuń" />
+    </form>
+</div>
+    }
+    <hr>
+
+    @foreach(var f in Model.AllFuelTypes)
+    {
+        <div>
+            <div style="display: inline">@f.FuelName</div>
+            <form  style="display: inline" asp-controller="Home" asp-action="AddFuelToGasStation">
+                <input type="hidden" name="FuelTypeId" value="@f.Id" />
+                <input type="hidden" name="GasStationId" value="@Model.GasStation.Id" />
+                @if(!Model.GasStationFuels.Any(x=>x.FuelTypeId == f.Id))
+                {
+                    <input type="submit" value="Dodaj" />
+                }
+            </form>
+        </div>
+    }
+</div>
+<hr />    
+    <a asp-action="Index">Widok startowy</a>

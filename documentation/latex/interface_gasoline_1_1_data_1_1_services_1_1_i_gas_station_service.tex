@@ -1,0 +1,271 @@
+\hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service}{}\section{Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service Interface Reference}
+\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service}\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+Inheritance diagram for Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ I\+Enumerable$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a22a21285a89cfffb01dfe3bedffa63f5}{Browse\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Get all Gas\+Stations \end{DoxyCompactList}\item 
+Task$<$ I\+Enumerable$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6ce56950a33e26aa14da2e8b1b92948b}{Get\+Gas\+Station\+Fuels}} ()
+\begin{DoxyCompactList}\small\item\em Get all Gas\+Stations with Fuel\+Types available there \end{DoxyCompactList}\item 
+Task$<$ I\+Enumerable$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6e69c73a645741984d2dc56cdd1a835c}{Get\+Gas\+Station\+Fuels\+By\+Gas\+Station\+Id}} (Guid id)
+\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_addc95df8cbebea3094ad37655746bba2}{Get\+By\+Id\+Async}} (Guid id)
+\begin{DoxyCompactList}\small\item\em Get Gas\+Station with Fuel\+Types by Guid \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae0bb2d899701dddd473667980e7533d2}{Add\+Gas\+Station\+Async}} (\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} gas\+Station)
+\begin{DoxyCompactList}\small\item\em Add new Gas\+Station \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ac98dd15c284e623253f9fcec2cd2db97}{Add\+Fuel\+To\+Gas\+Station}} (Guid station\+Id, \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} gas\+Station\+Fuel)
+\begin{DoxyCompactList}\small\item\em Add Gas\+Station\+Fuel to Gas\+Station \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae172cf0f9448fd6c9d24c2ced6b1afdc}{Update\+Gas\+Station\+Async}} (Guid guid, \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}} gas\+Station)
+\begin{DoxyCompactList}\small\item\em Update Gas\+Station, for example address or name \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a43d0139d482190c88cbc255af14c7837}{Delete\+Gas\+Station}} (Guid id)
+\begin{DoxyCompactList}\small\item\em Delete Gas\+Station with given Guid \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a88e35520ad60feb8c04c609a47c064ff}{Update\+Gas\+Station\+Fuel\+Async}} (Guid station\+Id, Guid fuel\+Type\+Id, \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} gas\+Station\+Fuel)
+\begin{DoxyCompactList}\small\item\em Update Gas\+Station\+Fuel price \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a2d8ab6257dbfd8bf3ade23604bf33ca2}{Delete\+Gas\+Station\+Fuel\+Async}} (Guid station\+Id, Guid fuel\+Type\+Id)
+\begin{DoxyCompactList}\small\item\em Remove Fuel\+Type from given Gas\+Station \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ab8df09742ef4c7f1935743ca59b71824}{Cheapest\+Fuel\+By\+Id}} (Guid id)
+\begin{DoxyCompactList}\small\item\em Gets sorted fuels \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ac98dd15c284e623253f9fcec2cd2db97}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ac98dd15c284e623253f9fcec2cd2db97}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!AddFuelToGasStation@{AddFuelToGasStation}}
+\index{AddFuelToGasStation@{AddFuelToGasStation}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{AddFuelToGasStation()}{AddFuelToGasStation()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}$>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Add\+Fuel\+To\+Gas\+Station (\begin{DoxyParamCaption}\item[{Guid}]{station\+Id,  }\item[{\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}}]{gas\+Station\+Fuel }\end{DoxyParamCaption})}
+
+
+
+Add Gas\+Station\+Fuel to Gas\+Station 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & Gas\+Station Guid\\
+\hline
+{\em gas\+Station\+Fuel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_ab9690eb56ba3a4a9c02d3ab8424990b0}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae0bb2d899701dddd473667980e7533d2}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae0bb2d899701dddd473667980e7533d2}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!AddGasStationAsync@{AddGasStationAsync}}
+\index{AddGasStationAsync@{AddGasStationAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{AddGasStationAsync()}{AddGasStationAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}$>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Add\+Gas\+Station\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}}]{gas\+Station }\end{DoxyParamCaption})}
+
+
+
+Add new Gas\+Station 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas\+Station} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a54922c75e2b138c45dc94dbf0c0c5b29}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a22a21285a89cfffb01dfe3bedffa63f5}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a22a21285a89cfffb01dfe3bedffa63f5}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!BrowseAsync@{BrowseAsync}}
+\index{BrowseAsync@{BrowseAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{BrowseAsync()}{BrowseAsync()}}
+{\footnotesize\ttfamily Task$<$I\+Enumerable$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Browse\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all Gas\+Stations 
+
+\begin{DoxyReturn}{Returns}
+Gas\+Station with fuels available
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_adb5cc988c7237c4019008a3c86bbe25f}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ab8df09742ef4c7f1935743ca59b71824}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ab8df09742ef4c7f1935743ca59b71824}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!CheapestFuelById@{CheapestFuelById}}
+\index{CheapestFuelById@{CheapestFuelById}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{CheapestFuelById()}{CheapestFuelById()}}
+{\footnotesize\ttfamily Task$<$List$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Cheapest\+Fuel\+By\+Id (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets sorted fuels 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Fuel id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List with fuels sorted by price
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a5f5ecf08135560403c4f08126ff8138a}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a43d0139d482190c88cbc255af14c7837}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a43d0139d482190c88cbc255af14c7837}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!DeleteGasStation@{DeleteGasStation}}
+\index{DeleteGasStation@{DeleteGasStation}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{DeleteGasStation()}{DeleteGasStation()}}
+{\footnotesize\ttfamily Task Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Delete\+Gas\+Station (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Delete Gas\+Station with given Guid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_ade4d74ba7e340358a006867f2abe4232}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a2d8ab6257dbfd8bf3ade23604bf33ca2}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a2d8ab6257dbfd8bf3ade23604bf33ca2}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!DeleteGasStationFuelAsync@{DeleteGasStationFuelAsync}}
+\index{DeleteGasStationFuelAsync@{DeleteGasStationFuelAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{DeleteGasStationFuelAsync()}{DeleteGasStationFuelAsync()}}
+{\footnotesize\ttfamily Task Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Delete\+Gas\+Station\+Fuel\+Async (\begin{DoxyParamCaption}\item[{Guid}]{station\+Id,  }\item[{Guid}]{fuel\+Type\+Id }\end{DoxyParamCaption})}
+
+
+
+Remove Fuel\+Type from given Gas\+Station 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & \\
+\hline
+{\em fuel\+Type\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_aced2362a8a06e2052178b96980c25b67}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_addc95df8cbebea3094ad37655746bba2}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_addc95df8cbebea3094ad37655746bba2}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!GetByIdAsync@{GetByIdAsync}}
+\index{GetByIdAsync@{GetByIdAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{GetByIdAsync()}{GetByIdAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}$>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Get\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Get Gas\+Station with Fuel\+Types by Guid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gas\+Station with Fuel\+Types
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a27d422e0840d24e1a45682f4dd293b7b}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6ce56950a33e26aa14da2e8b1b92948b}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6ce56950a33e26aa14da2e8b1b92948b}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!GetGasStationFuels@{GetGasStationFuels}}
+\index{GetGasStationFuels@{GetGasStationFuels}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{GetGasStationFuels()}{GetGasStationFuels()}}
+{\footnotesize\ttfamily Task$<$I\+Enumerable$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Get\+Gas\+Station\+Fuels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all Gas\+Stations with Fuel\+Types available there 
+
+\begin{DoxyReturn}{Returns}
+Gas\+Stations with Fuel\+Types
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a1b190190220d302d763a55ce77e7de50}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6e69c73a645741984d2dc56cdd1a835c}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a6e69c73a645741984d2dc56cdd1a835c}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!GetGasStationFuelsByGasStationId@{GetGasStationFuelsByGasStationId}}
+\index{GetGasStationFuelsByGasStationId@{GetGasStationFuelsByGasStationId}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{GetGasStationFuelsByGasStationId()}{GetGasStationFuelsByGasStationId()}}
+{\footnotesize\ttfamily Task$<$I\+Enumerable$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Get\+Gas\+Station\+Fuels\+By\+Gas\+Station\+Id (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a74d212652b5b4d79bae715b9e2ac8034}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae172cf0f9448fd6c9d24c2ced6b1afdc}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_ae172cf0f9448fd6c9d24c2ced6b1afdc}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!UpdateGasStationAsync@{UpdateGasStationAsync}}
+\index{UpdateGasStationAsync@{UpdateGasStationAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{UpdateGasStationAsync()}{UpdateGasStationAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}$>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Update\+Gas\+Station\+Async (\begin{DoxyParamCaption}\item[{Guid}]{guid,  }\item[{\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station}{Gas\+Station}}}]{gas\+Station }\end{DoxyParamCaption})}
+
+
+
+Update Gas\+Station, for example address or name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em guid} & \\
+\hline
+{\em gas\+Station} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_a71d61038244d2ebd2543e76073c7ac91}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a88e35520ad60feb8c04c609a47c064ff}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_gas_station_service_a88e35520ad60feb8c04c609a47c064ff}} 
+\index{Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}!UpdateGasStationFuelAsync@{UpdateGasStationFuelAsync}}
+\index{UpdateGasStationFuelAsync@{UpdateGasStationFuelAsync}!Gasoline.Data.Services.IGasStationService@{Gasoline.Data.Services.IGasStationService}}
+\subsubsection{\texorpdfstring{UpdateGasStationFuelAsync()}{UpdateGasStationFuelAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}$>$ Gasoline.\+Data.\+Services.\+I\+Gas\+Station\+Service.\+Update\+Gas\+Station\+Fuel\+Async (\begin{DoxyParamCaption}\item[{Guid}]{station\+Id,  }\item[{Guid}]{fuel\+Type\+Id,  }\item[{\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_gas_station_fuel}{Gas\+Station\+Fuel}}}]{gas\+Station\+Fuel }\end{DoxyParamCaption})}
+
+
+
+Update Gas\+Station\+Fuel price 
+
+
+\begin{DoxyParams}{Parameters}
+{\em station\+Id} & \\
+\hline
+{\em fuel\+Type\+Id} & \\
+\hline
+{\em gas\+Station\+Fuel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_gas_station_service_ac437b0ab0507030c7f91623fef829461}{Gasoline.\+Data.\+Services.\+Gas\+Station\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/coding-\/projects/\+Gasoline/\+Gasoline.\+Data/\+Services/\mbox{\hyperlink{_i_gas_station_service_8cs}{I\+Gas\+Station\+Service.\+cs}}\end{DoxyCompactItemize}

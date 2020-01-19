@@ -1,0 +1,134 @@
+\hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service}{}\section{Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service Interface Reference}
+\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service}\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+Inheritance diagram for Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ I\+Enumerable$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a7d27b8b4793ab2ac48f24c78d681469b}{Browse\+Async}} ()
+\begin{DoxyCompactList}\small\item\em Get all Fuel\+Types \end{DoxyCompactList}\item 
+Task$<$ I\+Enumerable$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}} $>$ $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3641a00f790e0aabb9decc8e9a5e7dc9}{Browse\+By\+Name\+Async}} (string name)
+\begin{DoxyCompactList}\small\item\em Find fuel types that contain given string in name \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3abc3e8b5c004ce0da2645017c971114}{Get\+Async}} (Guid id)
+\begin{DoxyCompactList}\small\item\em Find Fuel\+Type with given Guid \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}} $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_aca2418fb4b12a5d3b0663cc01647a1fa}{Add\+Async}} (\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}} fuel\+Type)
+\begin{DoxyCompactList}\small\item\em Add new Fuel\+Type \end{DoxyCompactList}\item 
+Task$<$ Task $>$ \mbox{\hyperlink{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_adf2b22c96b7badbb188a3399eef01b0d}{Remove\+Async}} (Guid id)
+\begin{DoxyCompactList}\small\item\em Remove Fuel\+Type with given Guid \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_aca2418fb4b12a5d3b0663cc01647a1fa}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_aca2418fb4b12a5d3b0663cc01647a1fa}} 
+\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}!AddAsync@{AddAsync}}
+\index{AddAsync@{AddAsync}!Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+\subsubsection{\texorpdfstring{AddAsync()}{AddAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}}$>$ Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service.\+Add\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}}}]{fuel\+Type }\end{DoxyParamCaption})}
+
+
+
+Add new Fuel\+Type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fuel\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_fuel_type_service_ace9a723344fbcdbd8d8f05a6d93bf56a}{Gasoline.\+Data.\+Services.\+Fuel\+Type\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a7d27b8b4793ab2ac48f24c78d681469b}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a7d27b8b4793ab2ac48f24c78d681469b}} 
+\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}!BrowseAsync@{BrowseAsync}}
+\index{BrowseAsync@{BrowseAsync}!Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+\subsubsection{\texorpdfstring{BrowseAsync()}{BrowseAsync()}}
+{\footnotesize\ttfamily Task$<$I\+Enumerable$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service.\+Browse\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all Fuel\+Types 
+
+\begin{DoxyReturn}{Returns}
+all Fuel\+Types list
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_fuel_type_service_a8255c7d8d62590890d09b618ef679b41}{Gasoline.\+Data.\+Services.\+Fuel\+Type\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3641a00f790e0aabb9decc8e9a5e7dc9}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3641a00f790e0aabb9decc8e9a5e7dc9}} 
+\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}!BrowseByNameAsync@{BrowseByNameAsync}}
+\index{BrowseByNameAsync@{BrowseByNameAsync}!Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+\subsubsection{\texorpdfstring{BrowseByNameAsync()}{BrowseByNameAsync()}}
+{\footnotesize\ttfamily Task$<$I\+Enumerable$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}}$>$ $>$ Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service.\+Browse\+By\+Name\+Async (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Find fuel types that contain given string in name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fuel types that contain given string in name
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_fuel_type_service_a3aff4edf14e7e4b320268f0383a9209c}{Gasoline.\+Data.\+Services.\+Fuel\+Type\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3abc3e8b5c004ce0da2645017c971114}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_a3abc3e8b5c004ce0da2645017c971114}} 
+\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}!GetAsync@{GetAsync}}
+\index{GetAsync@{GetAsync}!Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+\subsubsection{\texorpdfstring{GetAsync()}{GetAsync()}}
+{\footnotesize\ttfamily Task$<$\mbox{\hyperlink{class_gasoline_1_1_data_1_1_models_1_1_fuel_type}{Fuel\+Type}}$>$ Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service.\+Get\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Find Fuel\+Type with given Guid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Fuel\+Type
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_fuel_type_service_a9993b394d47b8cb7712fc526bf36e3e0}{Gasoline.\+Data.\+Services.\+Fuel\+Type\+Service}}.
+
+\mbox{\Hypertarget{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_adf2b22c96b7badbb188a3399eef01b0d}\label{interface_gasoline_1_1_data_1_1_services_1_1_i_fuel_type_service_adf2b22c96b7badbb188a3399eef01b0d}} 
+\index{Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}!RemoveAsync@{RemoveAsync}}
+\index{RemoveAsync@{RemoveAsync}!Gasoline.Data.Services.IFuelTypeService@{Gasoline.Data.Services.IFuelTypeService}}
+\subsubsection{\texorpdfstring{RemoveAsync()}{RemoveAsync()}}
+{\footnotesize\ttfamily Task$<$Task$>$ Gasoline.\+Data.\+Services.\+I\+Fuel\+Type\+Service.\+Remove\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove Fuel\+Type with given Guid 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_gasoline_1_1_data_1_1_services_1_1_fuel_type_service_a304619cc0643282249d7ce2619340eee}{Gasoline.\+Data.\+Services.\+Fuel\+Type\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/coding-\/projects/\+Gasoline/\+Gasoline.\+Data/\+Services/\mbox{\hyperlink{_i_fuel_type_service_8cs}{I\+Fuel\+Type\+Service.\+cs}}\end{DoxyCompactItemize}
